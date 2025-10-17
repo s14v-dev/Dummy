@@ -1,5 +1,5 @@
 {
-  "gethistory": [
+  "gethistory": 
     {
       "isSuccess": true,
       "statusCode": 200,
@@ -69,5 +69,5 @@
         "success": true
       }
     }
-  ]
+  
 }
