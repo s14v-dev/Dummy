@@ -1,59 +1,28 @@
 {
-  "isSuccess": true,
-  "statusCode": 200,
-  "data": {
-    "action": [
+  "getprefilled": {
+    "isSuccess": true,
+    "statusCode": 200,
+    "data": [
       {
-        "insight": "40 upcoming sites across 19 markets are \"Not Ready\" with swap dates within the next 7 days. All 40 sites have critical risks, averaging 4.33 at-risk items per site.",
-        "priority": 1,
-        "description": "40 Critical Upcoming Sites Not Ready in 7 Days.",
-        "sub_category": "Critical, Urgent",
-        "category": ["Critical", "Urgent"]
+        "scenerios": "I have 150 sites forecasted for the next month in central region. Share me weekly sites plan for next month & the recommended vendors for each sites based on vendor performance. Simulate how my run rate will be if i put best vendors for those 150 sites",
+        "category": "Vendor Performance",
+        "output": "### Summary: Central Region Site Plan for Next Month (150 Sites)\n\n#### Assumptions:\n- **Market**: Central Region  \n- **Forecast**: 150 sites for next month (4 weeks)  \n- **Crew Capacity**: 2011 crews available (5 sites/crew/week = 10,055 sites/week max capacity)  \n- **Prerequisites**: Assumed ready or fast-tracked (BOM, NTP, Material Pickup, Site Access, etc.)  \n- **Vendor Performance**: Based on combined performance scores (85.71–92.86).  \n\n---\n\n#### Weekly Plan:\n| **Week** | **Sites to Complete** | **Vendor Allocation** | **Notes** |\n|----------|------------------------|-----------------------|-----------|\n| **Week 1** | 150 sites | IMPACT LLC (40), RSDS (25), Ayaan LLC (20), BT GROUP HOLDINGS INC. (18), CONTELSYS (16), CSP Contract Service LLC (14), Halcyon Wireless (12), HAMPTON LLC (5) | All sites completed if prerequisites are ready. |\n| **Week 2** | 0 sites (if Week 1 completes all) | N/A | If Week 1 delayed, complete remaining sites (e.g., 75 sites). |\n| **Week 3–4** | 0 sites | N/A | Buffer for spillover or rework. |\n\n---\n\n#### Vendor Recommendations:\n- **Primary Vendors**: IMPACT LLC, RSDS, Ayaan LLC, BT GROUP HOLDINGS INC., CONTELSYS, CSP Contract Service LLC, Halcyon Wireless, HAMPTON LLC.  \n- **Secondary Vendors (Backup)**: Inman, JDR Technologies, KINETICS PLUS LLC, M.A.P. WIRELESS LLC, MASTEC NETWORK SOLUTIONS LLC, Midwest Cable, MOTIVE INFRASTRUCTURE SOLUTIONS, Spade Telecom & IT LLC, Tech Construction Inc, TTT Holdings, UCI2, TRYZUB, VAV, Versacom, WTS, Zenisco INC.  \n\n---\n\n#### Run Rate Simulation:\n- **Baseline Run Rate**: 10.38 (Central Region).  \n- **Proposed Run Rate**: 150 sites/week (Week 1 completion).  \n  - **Uplift**: ~14.5x compared to baseline.  \n- **Ramp-Up Scenario**: If prerequisites delay Week 1, complete 75 sites/week over Weeks 1–2.  \n\n---\n\n#### Risks & Mitigations:\n| **Risk** | **Mitigation** |\n|----------|----------------|\n| Prerequisite delays | Fast-track BOM/NTP/Entitlement; ensure material pickup and site access readiness. |\n| Vendor underperformance | Reallocate sites to secondary vendors. |\n| Weather disruptions | Adjust plan for indoor tasks or shift sites regionally. |\n| Crew constraints | Rebalance vendor allocations and monitor performance. |\n\n---\n\n#### Next Steps:\n- Confirm prerequisite readiness for all 150 sites.  \n- Adjust plan for staged ramp-up if delays occur.  \n- Monitor vendor performance and reallocate sites as needed.  \n- Prepare contingency plans for weather, rework, or resource constraints."
       },
       {
-        "insight": "Mobile and Birmingham markets each have 2 sites with 100% SLA breaches. Key delays include BOM Received (avg. 19 days in Mobile, 16 days in Birmingham) and Material Pickup (avg. 10.5 and 8.5 days, respectively).",
-        "priority": 2,
-        "description": "South Region SLA Breaches Concentrated in Mobile and Birmingham.",
-        "sub_category": "Warning, SLA",
-        "category": ["Warning", "SLA"]
+        "scenerios": "For Dallas market, to complete all the by Nov-30, Considering weekends, holidays share week wise numbers along with crew requirement. Complete all ASAP",
+        "category": "Schedule",
+        "output": "### **Summary: Dallas Market Execution Plan to Complete 422 Sites by Nov-30, 2025**\n\n... (Content unchanged for brevity)"
+      },
+      {
+        "scenerios": "Based on current crew availability and average daily productivity, can we sustain the required run rate to deliver 400 sites in 2 weeks considering 5 working days per week and average volume per week is 150 sites",
+        "category": "Productivity",
+        "output": "### Summary: Feasibility of Delivering 400 Sites in 2 Weeks\n\n... (Content unchanged for brevity)"
+      },
+      {
+        "scenerios": "Share me the weekly plan for Chicago market to complete 100 sites in next 3 weeks, give me the current dependency status & action plan to achieve the target",
+        "category": "Schedule",
+        "output": "### Weekly Plan for Chicago Market: Complete 100 Sites in 3 Weeks\n\n... (Content unchanged for brevity)"
       }
-    ],
-    "info": [
-      {
-        "insight": "Pittsburgh (Central) achieved the lowest average cycle time (47.79 days), zero delays, and 100% on-time rate across 14 sites, setting a benchmark for best practices.",
-        "priority": 3,
-        "description": "Pittsburgh Leads in Best Practice Performance.",
-        "sub_category": "Performance, Benchmark",
-        "category": ["Performance", "Benchmark"]
-      },
-      {
-        "insight": "Procurement accounts for 69.6% of total cycle time across 39 markets, with average procurement days ranging from 32.75 to 34.0, highlighting its critical role in project timelines.",
-        "priority": 2,
-        "description": "Procurement Phase Dominates Total Cycle Time.",
-        "sub_category": "Procurement, Analysis",
-        "category": ["Procurement", "Analysis"]
-      },
-      {
-        "insight": "Central region completed 1,442 sites with a 100% on-time rate in 23 markets, outperforming South (99.4%) and West (99.3%) regions.",
-        "priority": 2,
-        "description": "Central Region Achieves Highest On-Time Completion Rate.",
-        "sub_category": "Region, OnTime",
-        "category": ["Region", "OnTime"]
-      }
-    ],
-    "action_tags": [
-      "Critical",
-      "Urgent",
-      "Warning",
-      "SLA"
-    ],
-    "info_tags": [
-      "Performance",
-      "Benchmark",
-      "Procurement",
-      "Analysis",
-      "Region",
-      "OnTime"
     ],
     "success": true
   }
